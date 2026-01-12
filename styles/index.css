@@ -185,7 +185,7 @@ h2 + p {
     }
 
     .gallery-image-container {
-        height: clamp(256px, 16vw, 360px);
+        height: clamp(256px, 18vw, 420px);
     }
 
 }
