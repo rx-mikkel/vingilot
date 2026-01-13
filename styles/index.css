@@ -346,7 +346,7 @@ footer.band .content {
         aspect-ratio: 1.2;
     }
 
-    .gallery-image-container {
+    .gallery-image-container, .popover-image {
         border-width: 4px;
     }
 
@@ -359,6 +359,5 @@ footer.band .content {
 
     .popover-image img {
         max-width: 96vw;
-        max-height: 96vh;
     }
 }
