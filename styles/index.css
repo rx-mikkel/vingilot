@@ -71,7 +71,11 @@ header {
 
     img {
         width: clamp(4rem, 14vw, 18rem);
-        filter: drop-shadow(0 0 1.75rem rgb(50, 0, 80));
+        filter: drop-shadow(0 0 .5rem rgb(136, 4, 212));
+    }
+
+    h1 {
+        filter: drop-shadow(0 0 .5rem rgba(136, 4, 212, 0.23));
     }
 }
 
@@ -101,6 +105,13 @@ section, header, footer, .header-menu {
 .content.text {
     padding-top: 4rem;
     padding-bottom: 4rem;
+}
+
+.content h2 {
+    display: inline-block;
+	background: linear-gradient(90deg, #bc96ed, #cea78b);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 p, a {
