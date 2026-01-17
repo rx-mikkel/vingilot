@@ -360,4 +360,17 @@ footer.band .content {
     .popover-image img {
         max-width: 96vw;
     }
+
+    .content.text {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    footer {
+        padding: 0;
+
+        p, a {
+            font-size: 0.9rem;
+        }
+    }
 }
