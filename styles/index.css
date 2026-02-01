@@ -164,11 +164,6 @@ h2 + p {
     position: relative;
     z-index: 4;
     margin-top: clamp(-8rem, -5vw, -3rem);
-
-    button {
-        border: none;
-        background-color: transparent;
-    }
 }
 
 .gallery {
@@ -180,15 +175,15 @@ h2 + p {
     padding: 4rem 2rem;
     box-shadow: inset 0 2px 8px rgba(26, 0, 41, 0.474), inset 0 2px 20px rgba(17, 0, 27, 0.618);
 
-    button {
-        border: none;
-        background-color: transparent;
-    }
-
     .gallery-image-container {
         height: clamp(256px, 18vw, 420px);
     }
 
+}
+
+button {
+    border: none;
+    background-color: transparent;
 }
 
 .gallery-image-container {
@@ -215,10 +210,12 @@ h2 + p {
     opacity: 0;
     translate: 0 5em;
     background-color: rgb(23, 0, 37);
+    content-visibility: hidden;
 
     &:popover-open {
         opacity: 1;
         translate: 0 0;
+        content-visibility: visible;
     }
 
     img {
