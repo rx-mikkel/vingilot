@@ -109,7 +109,7 @@ section, header, footer, .header-menu {
 
 .content h2 {
     display: inline-block;
-	background: linear-gradient(90deg, #bc96ed, #cea78b);
+	background: linear-gradient(90deg, #ceb5ef, #cea78b);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
