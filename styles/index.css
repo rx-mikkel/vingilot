@@ -38,15 +38,34 @@ html, body {
         letter-spacing: -1px;
     }
 
+    a, a:visited {
+        color: #fff;
+    }
+
     img {
         width: 3rem;
         margin-right: 1rem;
         filter: drop-shadow(0 0 .3rem rgb(255, 255, 255));
     }
 
-    .left {
+    .left, .right {
         display: flex;
         align-items: center;
+    }
+
+    .right {
+        justify-content: flex-end;
+    }
+
+    .socials {
+        border-left: 1px solid #fff;
+        padding-left: 1rem;
+        margin-left: 2rem;
+
+        img {
+            width: 2.4rem;
+            filter: none;
+        }
     }
 }
 
@@ -380,6 +399,20 @@ footer.band .content {
 
         p, a {
             font-size: 0.9rem;
+        }
+    }
+
+    .header-menu {
+        img {
+            margin: 0;
+        }
+
+        .socials {
+            margin-left: 1rem;
+
+            img {
+                width: 2rem;
+            }
         }
     }
 }
