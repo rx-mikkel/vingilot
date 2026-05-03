@@ -24,12 +24,12 @@ html, body {
     position: fixed;
     top: 0;
     padding: 1rem;
-    background-color: rgba(18, 2, 32, 0.456);
+    background-color: rgba(18, 2, 32, 0.5);
     z-index: 8;
     display: flex;
     justify-content: space-between;
-    backdrop-filter: blur(0.15rem);
-    box-shadow: 0 2px 4px rgba(26, 0, 41, 0.453), 0 2px 14px rgba(17, 0, 27, 0.511);
+    backdrop-filter: blur(0.18rem);
+    box-shadow: 0 2px 4px rgba(26, 0, 41, 0.58), 0 2px 14px rgba(17, 0, 27, 0.56);
 
     h2 {
         margin: 0;
