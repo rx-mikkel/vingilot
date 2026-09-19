@@ -24,12 +24,13 @@ html, body {
     position: fixed;
     top: 0;
     padding: 1rem;
-    background-color: rgba(18, 2, 32, 0.5);
+    background-color: rgba(18, 2, 32, 0.588);
+    background-image: linear-gradient(66deg, rgba(21, 2, 32, 0), rgba(233, 149, 14, 0.056) 80%, rgba(233, 149, 14, 0.075));
     z-index: 8;
     display: flex;
     justify-content: space-between;
-    backdrop-filter: blur(0.18rem);
-    box-shadow: 0 2px 4px rgba(26, 0, 41, 0.58), 0 2px 14px rgba(17, 0, 27, 0.56);
+    backdrop-filter: blur(0.22rem);
+    box-shadow: 0 2px 4px rgba(26, 0, 41, 0.621), 0 2px 14px rgba(17, 0, 27, 0.601);
 
     h2 {
         margin: 0;
@@ -71,7 +72,7 @@ html, body {
 
 header {
     max-width: 1920px;
-    background-image: radial-gradient(circle,rgba(11, 1, 24, 0.551) 12%, rgba(11, 1, 24, 0) 67%, rgba(28, 2, 51, 0.541) 100%), url(../images/vingi_bg.webp);
+    background-image: radial-gradient(circle,rgba(11, 1, 24, 0.626) 15%, rgba(11, 1, 24, 0.118) 67%, rgba(28, 2, 51, 0.674) 100%), url(../images/vingi_bg.webp);
     background-size: cover;
     background-position: center;
     box-shadow: 0px 2px 6px #03000836, 0px 2px 12px #05000f5d, 0px 2px 24px #0a01202c;
@@ -96,6 +97,10 @@ header {
     h1 {
         filter: drop-shadow(0 0 .5rem rgba(136, 4, 212, 0.23));
     }
+}
+
+section {
+    background-color: #1e064637;
 }
 
 section, header, footer, .header-menu {
@@ -128,21 +133,24 @@ section, header, footer, .header-menu {
 
 .content h2 {
     display: inline-block;
-	background: linear-gradient(90deg, #dac7f5, #e4bea4);
+	background: linear-gradient(90deg, #e1d1f7, #f5cdb2);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 p, a {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.4em;
-    max-width: 56rem;
-    font-size: 1.1rem;
+    line-height: 1.5em;
+    max-width: 36rem;
+    font-size: 1rem;
+    text-wrap: pretty;
 }
 
 a, a:visited {
     color: #9b65e2;
     text-decoration: underline;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: auto;
 }
 
 a:hover {
@@ -161,7 +169,7 @@ h1, h2 {
 
 h1 {
     font-size: clamp(2rem, calc(2.8vw + 1rem), 4rem);
-    font-weight: 700;
+    font-weight: 400;
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
@@ -169,12 +177,26 @@ h1 {
 h2 {
     margin-top: 2rem;
     margin-bottom: 0.8rem;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
 h2 + p {
     margin-top: 0;
+}
+
+.inline-image {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.mixed-content {
+    display: flex;
+    max-width: 36rem;
+
+    p {
+        margin-top: 0;
+    }
 }
 
 .header-gallery {
@@ -192,7 +214,7 @@ h2 + p {
     max-width: 100%;
     background-image: linear-gradient(43deg,#801d945b,#4c044e5f 46%,#5828dd51);
     padding: 4rem 2rem;
-    box-shadow: inset 0 2px 8px rgba(26, 0, 41, 0.474), inset 0 2px 20px rgba(17, 0, 27, 0.618);
+    box-shadow: inset 0 2px 8px rgba(26, 0, 41, 0.474), inset 0 2px 20px rgba(17, 0, 27, 0.618), inset -1px 1px 3px -1px rgba(233, 149, 14, 0.214);
     margin-bottom: 2rem;
 
     .gallery-image-container {
@@ -209,28 +231,34 @@ button {
 .gallery-image-container {
     display: inline-block;
     height: clamp(128px, 12vw, 256px);
-    border: 6px solid rgb(23, 0, 37);
+    padding: 4px;
     border-radius: 4px;
-    box-shadow: 0px 2px 6px #03000849, 0px 2px 16px #05000f5b;
+    box-shadow: 0px 2px 6px #03000849, 0px 2px 16px #05000f5b, inset -1px 1px 3px -1px rgba(233, 149, 14, 0.2);
     cursor: pointer;
     background-color: rgb(23, 0, 37);
+    background-image: linear-gradient(66deg, rgba(21, 2, 32, 0), rgba(233, 149, 14, 0.127) 80%, rgba(233, 149, 14, 0.274));
 
     img {
         max-height: 100%;
         border-radius: 2px;
+        outline: 1px solid #0700002c;
+        outline-offset: -1px;
+        display: flex;
     }
 }
 
 .popover-image {
-    padding: 0;
-    border: 6px solid rgb(23, 0, 37);
-    border-radius: 4px;
-    box-shadow: 0px 2px 6px #030008a1, 0px 2px 16px 3px #05000f57, 0px 2px 24px 12px #0a012044;
+    padding: 6px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px #030008a1, 0px 2px 16px 3px #05000f61, 0px 2px 24px 12px #0a012058, inset -1px 1px 3px -1px rgba(233, 149, 14, 0.2);
     transition: opacity .4s, translate .4s, overlay .4s allow-discrete, display .4s allow-discrete;
     opacity: 0;
     translate: 0 5em;
     background-color: rgb(23, 0, 37);
+    background-image: linear-gradient(66deg, rgba(21, 2, 32, 0), rgba(233, 149, 14, 0.127) 80%, rgba(233, 149, 14, 0.17));
     content-visibility: hidden;
+    border: none;
 
     &:popover-open {
         opacity: 1;
@@ -241,6 +269,9 @@ button {
     img {
         max-width: 84vw;
         max-height: 84vh;
+        border-radius: 4px;
+        outline: 1px solid #0700005f;
+        outline-offset: -1px;
     }
 }
 
@@ -308,7 +339,7 @@ button {
 
 footer {
     background-color: #06010c;
-    background-image: linear-gradient(43deg,#801d942b,#4c044e34 46%,#5828dd23);
+    background-image: linear-gradient(223deg,#a21b6c2b,#4c044e34 46%,#5828dd23);
     padding: 2rem 0;
     width: 100%;
 
@@ -333,6 +364,12 @@ footer.band .content {
 
 .right {
     text-align: right;
+}
+
+@media (max-width: 500px) {
+    .hidden-500 {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
