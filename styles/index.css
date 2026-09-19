@@ -366,6 +366,14 @@ footer.band .content {
     text-align: right;
 }
 
+@media (max-width: 400px) {
+    .header-menu {
+        h2 {
+            font-size: 1.4rem;
+        }
+    }
+}
+
 @media (max-width: 500px) {
     .hidden-500 {
         display: none;
@@ -417,10 +425,6 @@ footer.band .content {
         aspect-ratio: 1.2;
     }
 
-    .gallery-image-container, .popover-image {
-        border-width: 4px;
-    }
-
     .gallery {
         max-width: initial;
         margin: 0 -1rem 0 -1rem;
@@ -429,7 +433,7 @@ footer.band .content {
     }
 
     .popover-image img {
-        max-width: 96vw;
+        max-width: 92vw;
     }
 
     .content.text {
