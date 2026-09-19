@@ -24,13 +24,13 @@ html, body {
     position: fixed;
     top: 0;
     padding: 1rem;
-    background-color: rgba(18, 2, 32, 0.588);
-    background-image: linear-gradient(66deg, rgba(21, 2, 32, 0), rgba(233, 149, 14, 0.056) 80%, rgba(233, 149, 14, 0.075));
+    background-color: rgba(18, 2, 32, 0.7);
+    background-image: linear-gradient(66deg, rgba(21, 2, 32, 0), rgba(233, 149, 14, 0.056) 80%, rgba(233, 149, 14, 0.133));
     z-index: 8;
     display: flex;
     justify-content: space-between;
-    backdrop-filter: blur(0.22rem);
-    box-shadow: 0 2px 4px rgba(26, 0, 41, 0.621), 0 2px 14px rgba(17, 0, 27, 0.601);
+    backdrop-filter: blur(0.28rem);
+    box-shadow: 0 2px 4px rgba(26, 0, 41, 0.8), 0 2px 16px rgba(17, 0, 27, 0.7);
 
     h2 {
         margin: 0;
@@ -79,7 +79,7 @@ header {
     position: relative;
     z-index: 0;
     width: 100%;
-    aspect-ratio: 2.1;
+    aspect-ratio: 2.6;
     flex-direction: column;
     display: flex;
 
@@ -375,6 +375,12 @@ footer.band .content {
 @media (max-width: 600px) {
     .hidden-600 {
         display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    header {
+        aspect-ratio: 2.2;
     }
 }
 
